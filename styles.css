@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root
+{
+    --color-violet:rgba(102, 51, 204, 0.9);
+    --color-violet-noback:rgb(102, 51, 204);
+    --color-starter: rgb(113, 89, 193);
+    --color-launchbase: rgb(253, 149, 31);
+    --color-gostack: rgb(4, 211, 97);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(24, 23, 29);
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    background-image: url('/Launchbase_Bootcamp/Fase2_intro/Desafio 2.3/omnistack-wallpaper-1920x1080.png');
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-size:auto;
+}
+
+#courses
+{
+    background-color: rgb(24, 23, 29);
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    height: 1sv;
+    background-image: url('/Launchbase_Bootcamp/Fase2_intro/Desafio 2.3/fundogalax.jpg');
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-size:auto;
+}
+
+/*===HEADER===*/
+
+header
+{
+    padding: 20px;
+}
+
+header div
+{
+    text-align: center;
+    margin: auto;
+}
+header div img
+{
+    margin-right: 0px;
+    height: 50px;
+
+    vertical-align:middle;
+
+}
+
+header div a
+{
+    color: white;
+    font-size: 18px;
+    line-height: 28px; /* colocar 10px a mais do font-size */
+    margin: 0px 16px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 3px solid;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 25px;
+    letter-spacing: 2px;
+}
+
+header div a:hover
+{
+    box-shadow: inset 0 0 1em var(--color-violet-noback), 0 0 3em var(--color-violet-noback);
+    border: 3px solid var(--color-violet-noback);
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+/*===MIDDLE===*/
+#middle
+{
+    margin: 50px;
+    padding: 20px;
+    color: white;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+}
+
+#middle h1
+{
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+}
+
+#middle h2
+{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+    margin: 8px auto;
+    opacity: 0.8;
+}
+
+#middle h3
+{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+    margin: 30px 0;
+    opacity: 0.8;
+}
+
+#middle p
+{
+    max-width: 500px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.button
+{
+    margin: 0 80px;
+    padding: 15px;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 25px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.button a
+{
+    color: white;
+    text-decoration: none;
+}
+
+#middle img
+{
+    margin-right: 0px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 50px;
+    vertical-align:middle;
+}
+
+/*===INDEX COLOR BUTTON ===*/
+.button:hover{
+    box-shadow: inset 0 0 1em var(--color-violet-noback), 0 0 3em var(--color-violet-noback);
+    border: 3px solid var(--color-violet-noback);
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+/*=== CARDS ===*/
+
+.cards
+{
+    max-width: 1300px;
+    height: 600px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    color: white;
+
+}
+
+.card_go
+{
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 30px;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 20px;
+
+}
+
+.card_lau
+{
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 30px;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 20px;
+
+}
+
+.card_sta
+{
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 30px;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 20px;
+
+}
+
+.card__image-container
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card__content,
+.card__info
+{
+    height: 100px;
+    padding: 24px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.card__cost
+{
+    display:flex;
+    justify-content: center;
+}
+
+.card__info
+{
+    text-align: center;
+    bottom: 0px; 
+}
+
+.card__teacher_go
+{
+    margin-top: 10px;
+    text-align: center;
+    bottom: 0px; 
+}
+
+.card__teacher_go h2
+{
+    font-weight: bold;
+}
+
+.card__teacher_go p
+{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-gostack);
+
+}
+
+.card__teacher_lau
+{
+    margin-top: 10px;
+    text-align: center;
+    bottom: 0px; 
+}
+
+.card__teacher_lau h2
+{
+    font-weight: bold;
+}
+
+.card__teacher_lau p
+{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-launchbase);
+
+}
+
+.card__teacher_sta
+{
+    margin-top: 10px;
+    text-align: center;
+    bottom: 0px; 
+}
+
+.card__teacher_sta h2
+{
+    font-weight: bold;
+}
+
+.card__teacher_sta p
+{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-starter);
+
+}
+
+.card__img_sta 
+{
+    padding-top: 25px;
+    text-align: center;
+    letter-spacing: 20px; 
+    bottom: 0px; 
+
+}
+.card__img_sta img
+{
+    text-align: center;
+    height: 50px;
+    letter-spacing: 20px; 
+    bottom: 0px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 50%; 
+
+}
+
+.card__img_sta img:hover
+{
+    box-shadow: inset 0 0 1em var(--color-starter), 0 0 3em var(--color-starter);
+    border: 3px solid var(--color-starter);
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.card__img_lau 
+{
+    padding-top: 25px;
+    text-align: center;
+    letter-spacing: 20px; 
+    bottom: 0px; 
+
+}
+.card__img_lau img
+{
+    text-align: center;
+    height: 50px;
+    letter-spacing: 20px; 
+    bottom: 0px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 50%; 
+
+}
+
+.card__img_lau img:hover
+{
+    box-shadow: inset 0 0 1em var(--color-launchbase), 0 0 3em var(--color-launchbase);
+    border: 3px solid var(--color-launchbase);
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.card__img_go 
+{
+    padding-top: 25px;
+    text-align: center;
+    letter-spacing: 20px; 
+    bottom: 0px; 
+
+}
+.card__img_go img
+{
+    text-align: center;
+    height: 50px;
+    letter-spacing: 20px; 
+    bottom: 0px; 
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 50%; 
+
+}
+
+.card__img_go img:hover
+{
+    box-shadow: inset 0 0 1em var(--color-gostack), 0 0 3em var(--color-gostack);
+    border: 3px solid var(--color-gostack);
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.card__price_sta
+{
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    filter: brightness(90%);
+    margin: 25px 50px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card__price_lau
+{
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    filter: brightness(90%);
+    margin: 25px 50px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card__price_go
+{
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    filter: brightness(90%);
+    margin: 25px 50px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/*===CARDS COLORS===*/
+.card_go:hover{
+    box-shadow: inset 0 0 1em var(--color-gostack), 0 0 3em var(--color-gostack);
+    border: 3px solid var(--color-gostack);
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.card_lau:hover{
+    box-shadow: inset 0 0 1em var(--color-launchbase), 0 0 3em var(--color-launchbase);
+    border: 3px solid var(--color-launchbase);
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.card_sta:hover{
+    box-shadow: inset 0 0 1em var(--color-starter), 0 0 3em var(--color-starter);
+    border: 3px solid var(--color-starter);
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+/* === MODAL === */
+
+.modal-overlay
+{
+    background-color: rgb(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    Position: fixed;
+    top:0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative; /* Com isso, o botão passa a respeitar o limite de tamanho do "pai" modal*/
+}
+
+.modal .close-modal
+{
+    color: white;
+    position: absolute; /* Com isso, o botão passa a respeitar o limite de tamanho do "pai" modal*/
+    right: 8px; /* Com isso, o botão fica no lado direito do absolute. Se colocar tbm bottom, ele fica no direito e inferior*/
+    top: 8px;
+    cursor: pointer; /*Muda o ponteiro do mouse para uma mão clicando*/
+}
+
+/*=== MODAL.ACTIVE ===*/
+.modal-overlay.active
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*===MODAL MAXIMIZE===*/
+
+.maximize-modal {
+    color: white;
+    position: absolute; /* Com isso, o botão passa a respeitar o limite de tamanho do "pai" modal*/
+    right: 36px; /* Com isso, o botão fica no lado direito do absolute. Se colocar tbm bottom, ele fica no direito e inferior*/
+    top: 8px;
+    cursor: pointer; /*Muda o ponteiro do mouse para uma mão clicando*/
+}
+
+.maximize-modal.maximize
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe
+{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
