@@ -58,15 +58,17 @@ Free style, but with required bulletpoints:
 * JS.
 
 ## Result
-*Landing Page:
-![gif](https://media.giphy.com/media/QZQAKyJA3HYRGWIYpP/giphy.gif)
+**Landing Page:**
+| ![gif](https://media.giphy.com/media/QZQAKyJA3HYRGWIYpP/giphy.gif)| 
+| :---: |
 
-*Couse page:
-![gif](https://media.giphy.com/media/kxlqGlKMipOFutZRPB/giphy.gif)
+**Couse page:**
+| ![gif](https://media.giphy.com/media/kxlqGlKMipOFutZRPB/giphy.gif)| 
+| :---: |
 
-*Details iFrame:
-![gif](https://media.giphy.com/media/ZcQb1uA0wUNZb1LLgD/giphy.gif)
-
+**Details iFrame:**
+![gif](https://media.giphy.com/media/ZcQb1uA0wUNZb1LLgD/giphy.gif)| 
+| :---: |
 ## Developers
 These amazing people supported on the development of this project!
 
