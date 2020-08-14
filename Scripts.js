@@ -22,6 +22,8 @@ for(let card of cards)
         const videoId = card.getAttribute("id");
         modalOverlay.classList.add('active')
         modalOverlay.querySelector("iframe").src = `https://rocketseat.com.br/${videoId}`
+        console.log("Deu certo, funcionou")
+
     })
 }
 
@@ -37,6 +39,7 @@ document.querySelector(".close-modal").addEventListener("click", function()
 document.querySelector(".maximize-modal").addEventListener("click", function(){
     if(!modal.classList.contains('maximize'))
     {
-        modal.classList.add('maximize')
+        modal.classList.toggle('maximize')
+        console.log("Deu certo, maximizou")
     }
 })
